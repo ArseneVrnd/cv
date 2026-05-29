@@ -3,6 +3,7 @@ import LangToggle from './components/LangToggle.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
+import FounderTrack from './components/FounderTrack.jsx'
 import { useLang } from './i18n/LanguageContext.jsx'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Hero />
         <About />
         <Experience />
+        <FounderTrack />
       </main>
 
       <footer className="relative z-10 py-10 text-center text-slate-500 text-sm">
