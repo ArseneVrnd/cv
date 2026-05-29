@@ -7,6 +7,7 @@ import FounderTrack from './components/FounderTrack.jsx'
 import Research from './components/Research.jsx'
 import Education from './components/Education.jsx'
 import Skills from './components/Skills.jsx'
+import { LanguagesAndCerts, Interests } from './components/Extras.jsx'
 import { useLang } from './i18n/LanguageContext.jsx'
 
 export default function App() {
@@ -24,6 +25,8 @@ export default function App() {
         <Research />
         <Education />
         <Skills />
+        <LanguagesAndCerts />
+        <Interests />
       </main>
 
       <footer className="relative z-10 py-10 text-center text-slate-500 text-sm">
