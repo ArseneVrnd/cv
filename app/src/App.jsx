@@ -5,6 +5,7 @@ import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
 import FounderTrack from './components/FounderTrack.jsx'
 import Research from './components/Research.jsx'
+import Education from './components/Education.jsx'
 import { useLang } from './i18n/LanguageContext.jsx'
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
         <Experience />
         <FounderTrack />
         <Research />
+        <Education />
       </main>
 
       <footer className="relative z-10 py-10 text-center text-slate-500 text-sm">
