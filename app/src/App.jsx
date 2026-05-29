@@ -1,5 +1,5 @@
 import ParticleBackground from './components/Particles.jsx'
-import LangToggle from './components/LangToggle.jsx'
+import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
@@ -8,14 +8,13 @@ import Research from './components/Research.jsx'
 import Education from './components/Education.jsx'
 import Skills from './components/Skills.jsx'
 import { LanguagesAndCerts, Interests } from './components/Extras.jsx'
-import { useLang } from './i18n/LanguageContext.jsx'
+import Footer from './components/Footer.jsx'
 
 export default function App() {
-  const { t } = useLang()
   return (
-    <div className="min-h-screen text-slate-200 overflow-x-hidden">
+    <div id="top" className="min-h-screen text-slate-200 overflow-x-hidden">
       <ParticleBackground />
-      <LangToggle />
+      <Nav />
 
       <main className="relative z-10">
         <Hero />
@@ -29,9 +28,7 @@ export default function App() {
         <Interests />
       </main>
 
-      <footer className="relative z-10 py-10 text-center text-slate-500 text-sm">
-        © 2026 Arsène Vuarand. {t('footer.built')}
-      </footer>
+      <Footer />
     </div>
   )
 }

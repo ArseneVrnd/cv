@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 // Shared section shell: animated heading with the original gradient rule.
 export default function Section({ id, title, children, className = '' }) {
   return (
-    <section id={id} className={`relative z-10 py-20 px-6 ${className}`}>
+    <section id={id} className={`relative z-10 py-20 px-6 scroll-mt-20 ${className}`}>
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
