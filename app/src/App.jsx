@@ -1,6 +1,7 @@
 import ParticleBackground from './components/Particles.jsx'
 import LangToggle from './components/LangToggle.jsx'
 import Hero from './components/Hero.jsx'
+import About from './components/About.jsx'
 import { useLang } from './i18n/LanguageContext.jsx'
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
 
       <main className="relative z-10">
         <Hero />
+        <About />
       </main>
 
       <footer className="relative z-10 py-10 text-center text-slate-500 text-sm">
